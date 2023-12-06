@@ -1,7 +1,7 @@
 const Item = require('../models/Item');
 const Comment = require('../models/Comment');
 const multer = require('multer');
-const cloudinaryUpload = require('../services/utils/cloud');
+const cloudinaryUpload = require('./utils/cloud');
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage, limits: { filesize: 10 * 1024 * 1024}, });
